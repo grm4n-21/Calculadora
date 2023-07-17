@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="/src/output.css">
+    <script src="/src/script.js"></script>
+</head>
+<body class="text-center bg-gray-100">
+    <h1 class="text-4xl font-bold my-6">Calculadora de German XD</h1>
+    <div class="calculator p-2 border border-gray-300 rounded-lg shadow-lg max-w-md mx-auto transform scale-x-50 scale-y-50">
+        <input type="text" id="input" class="w-full p-2 border border-gray-300 rounded">
+        <div class="button grid grid-cols-4  gap-4 mt-1">
+            <button class="number col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('7')">7</button>
+            <button class="number col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('8')">8</button>
+            <button class="number col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('9')">9</button>
+            <button class="operator col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('+')">+</button>
+            <button class="number col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('4')">4</button>
+            <button class="number col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('5')">5</button>
+            <button class="number col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('6')">6</button>
+            <button class="operator col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('-')">-</button>
+            <button class="number col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('1')">1</button>
+            <button class="number col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('2')">2</button>
+            <button class="number col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('3')">3</button>
+            <button class="operator col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('*')">*</button>
+            <button class="number col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('0')">0</button>
+            <button class="operator col-span-1 p-2 border border-gray-300 rounded" onclick="appendInput('/')">/</button>
+            <button class="clear col-span-1 p-2 border border-gray-300 rounded" onclick="clearInput()">C</button>
+            <button class="calculate col-span-1 p-2 border border-gray-300 rounded" onclick="calculate()">=</button>
+        </div>
+        <div class="theme-switch mt-4">
+            <label for="theme-toggle">Tema:</label>
+            <input type="checkbox" id="theme-toggle" onchange="toggleTheme()">
+        </div>
+    </div>
+</body>
+</html>
